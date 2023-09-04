@@ -1,0 +1,30 @@
+
+GET http://localhost:8080/api/movies
+###
+POST http://localhost:8080/api/movies
+content-type: application/json
+
+{
+    "title":"Movie_1",
+	"director":"Director_1",
+	"release":"2020-12-21",
+	"rating": 3.4
+}
+###
+
+GET http://localhost:8080/api/movies/1
+###
+
+DELETE  http://localhost:8080/api/movies/1
+###
+
+PUT http://localhost:8080/api/movies/1
+content-type: application/json
+
+{
+    "title":"Movie_1",
+	"director":"Director_1",
+	"release":"2020-12-21",
+	"rating": 3.4
+}
+###
